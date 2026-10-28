@@ -11,6 +11,7 @@ namespace RestaurantApp
         static void Main(string[] args)
         {
             Console.WriteLine("Hello Sit 1/1");
+            Console.WriteLine("week 2");
         }
     }
 }
