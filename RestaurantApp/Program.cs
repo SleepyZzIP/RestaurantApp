@@ -13,14 +13,24 @@ namespace RestaurantApp
         {
             Console.WriteLine("Hello Sit 1/1");
             Console.WriteLine("week 2");
+
+            
         }
     }
     
     class Restaurant
     {
-    public int Id;
-    public string Name;
-    public string Type;
-    public double Point;
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Type { get; set; }
+    public double Point { get; set; }
+
+    public Restaurant(int id,string name,string type,double point) 
+        {
+            this.Id = id;
+            this.Name = name;
+            this.Type = type;
+            this.Point = point;
+        }
     }
 }
