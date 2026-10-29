@@ -22,7 +22,8 @@ namespace RestaurantApp
                new Restaurant(4, "Huguosi Snacks","Snacks",4.2),
                new Restaurant(5, "Haidilao Hot Pot","Hot Pot",4.8)
             };
-
+            double totalpoint = 0;
+            double averagepoint = 0;
             for (int i = 0;i < list.Count; i++)
             {
                 Console.WriteLine(
@@ -32,7 +33,15 @@ namespace RestaurantApp
                     $"{list[i].Point}"
                     );
             }
-            
+
+            for (int i = 0; i < list.Count; i++)
+            {
+                totalpoint = totalpoint + list[i].Point; 
+            }
+
+            averagepoint = totalpoint / list.Count;
+            Console.WriteLine
+
         }
     }
     
