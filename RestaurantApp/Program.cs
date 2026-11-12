@@ -36,11 +36,11 @@ namespace RestaurantApp
 
             for (int i = 0; i < list.Count; i++)
             {
-                totalpoint = totalpoint + list[i].Point; 
+                totalpoint = totalpoint + list[i].Point;
             }
 
             averagepoint = totalpoint / list.Count;
-            Console.WriteLine
+            Console.WriteLine("Rating = "+averagepoint);
 
         }
     }
@@ -51,7 +51,7 @@ namespace RestaurantApp
     public string Name { get; set; }
     public string Type { get; set; }
     public double Point { get; set; }
-
+        
     public Restaurant(int id,string name,string type,double point) 
         {
             this.Id = id;
